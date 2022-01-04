@@ -35,7 +35,7 @@
                 <div class="row align-items-center">
                     <div class="col-6">
                         <a class="navbar-brand" href="index.html">
-                            <img src="{{asset('assets/images/logo/logo.svg')}}" alt="Logo">
+                            <img src="{{asset('assets/images/logo/boncho-logo.png')}}" alt="Logo">
                         </a>
                     </div>
                     
@@ -61,24 +61,11 @@
                                     <!-- Shopping Item -->
                                     <div class="shopping-item">
                                         <div class="dropdown-cart-header">
-                                            <span>2 Items</span>
+                                            <span></span>
                                             <a href="cart.html">View Cart</a>
                                         </div>
                                         <ul class="shopping-list">
-                                            <li>
-                                                <a href="javascript:void(0)" class="remove" title="Remove this item"><i
-                                                        class="lni lni-close"></i></a>
-                                                <div class="cart-img-head">
-                                                    <a class="cart-img" href="product-details.html"><img
-                                                            src="{{asset('assets/images/header/cart-items/item1.jpg')}}" alt="#"></a>
-                                                </div>
-
-                                                <div class="content">
-                                                    <h4><a href="product-details.html">
-                                                            Apple Watch Series 6</a></h4>
-                                                    <p class="quantity">1x - <span class="amount">$99.00</span></p>
-                                                </div>
-                                            </li>
+                                            {{-- <x-bag-product-card :product="" /> --}}
                                             <li>
                                                 <a href="javascript:void(0)" class="remove" title="Remove this item"><i
                                                         class="lni lni-close"></i></a>

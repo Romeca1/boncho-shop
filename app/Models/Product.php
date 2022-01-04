@@ -18,6 +18,9 @@ class Product extends Model
     {
     	return $this->hasOne(ImageAlbum::class);
     }
-    
+    public function images()
+    {
+    	return $this->hasManyThrough(Image::class, ImageAlbum::class);
+    }
     
 }

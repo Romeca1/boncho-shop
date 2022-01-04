@@ -9,8 +9,8 @@ class ProductController extends Controller
     //
     public function showTraiding()
     {
-    	$products = Product::with("category", "album")->take(8)->get();
-
+    	$products = Product::with("category", "images")->take(8)->get();
+       
     	return view("welcome", compact("products"));
     }
 }
